@@ -1,5 +1,5 @@
 ---
-title: Welcome to my blog
+title: Scotty Hendricks
 ---
 <!DOCTYPE html>
 <html lang="en">
