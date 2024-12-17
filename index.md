@@ -21,6 +21,7 @@ title: Scotty Hendricks
           <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
           <li class="nav-item"><a class="nav-link" href="scratch.html">Basketball</a></li>
           <li class="nav-item"><a class="nav-link" href="webapp.html">Mad Libs</a></li>
+          <li class="nav-item"><a class="nav-link" href="tableau.html">Tableau Graph</a></li>
         </ul>
       </div>
     </div>
