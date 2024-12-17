@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mad Libs Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    }
+    h1 {
+      color: #333;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      margin-bottom: 20px;
+    }
+    input, button {
+      margin: 5px 0;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .story {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mad Libs Generator</h1>
+  <form id="madLibsForm">
+    <input type="text" id="noun" placeholder="Enter a noun" required>
+    <input type="text" id="verb" placeholder="Enter a verb" required>
+    <input type="text" id="adjective" placeholder="Enter an adjective" required>
+    <input type="text" id="place" placeholder="Enter a place" required>
+    <button type="submit">Generate Story</button>
+  </form>
+  <div class="story" id="story" style="display: none;"></div>
+
+  <script>
+    document.getElementById('madLibsForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const noun = document.getElementById('noun').value;
+      const verb = document.getElementById('verb').value;
+      const adjective = document.getElementById('adjective').value;
+      const place = document.getElementById('place').value;
+
+      const story = `
+        Once upon a time in ${place}, there was a very ${adjective} ${noun}. 
+        Every day, it loved to ${verb}, making everyone in ${place} laugh!
+      `;
+
+      const storyDiv = document.getElementById('story');
+      storyDiv.textContent = story;
+      storyDiv.style.display = 'block';
+    });
+  </script>
+</body>
+</html>

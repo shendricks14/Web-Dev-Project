@@ -1,0 +1,76 @@
+/* Custom background and font styles */
+body {
+    background-color: rosybrown;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Section headings */
+  h2 {
+    color: #4caf50;
+    border-bottom: 2px solid #4caf50;
+    padding-bottom: 5px;
+  }
+  
+  /* Unordered list in an ordered list */
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  ol ul {
+    list-style-type: square;
+  }
+  
+  /* Links */
+  a {
+    color: #4caf50;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /* Image styling */
+  img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #4caf50;
+    margin: 10px 0;
+  }
+  
+  /* Video frame */
+  iframe {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+  }
+  
+  /* Div styling */
+  div {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
